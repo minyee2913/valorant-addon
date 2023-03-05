@@ -1,0 +1,93 @@
+{
+    "namespace": "hud",
+    "hud_actionbar_text": {
+        "type": "panel",
+        "controls": [
+            {
+                "kill": {
+                    "type": "image",
+                    "size": [
+                        60,
+                        60
+                    ],
+                    "offset": [
+                        0,
+                        -10
+                    ],
+                    "texture": "textures/ui/2913/kill_uv",
+                    "uv_size": [
+                        320,
+                        320
+                    ],
+                    "uv": "@kill_anim",
+                    "$atext": "$actionbar_text",
+                    "visible": "(($atext = 'kill') or ($atext = 'HEADSHOT'))"
+                }
+            },
+            {
+                "hud_actionbar_text": {
+                    "type": "image",
+                    "size": [
+                        "100%c + 12px",
+                        "100%c + 5px"
+                    ],
+                    "offset": [
+                        0,
+                        "50%-20px"
+                    ],
+                    "texture": "textures/ui/hud_tip_text_background",
+                    "alpha": "@hud.anim_actionbar_text_background_alpha_out",
+                    "$atext": "$actionbar_text",
+                    "controls": [
+                        {
+                            "actionbar_message": {
+                                "type": "label",
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "color": "$tool_tip_text",
+                                "layer": 31,
+                                "text": "$actionbar_text",
+                                "localize": false,
+                                "alpha": "@hud.anim_actionbar_text_alpha_out",
+                                "$atext": "$actionbar_text",
+                                "visible": "(not ($atext = 'HEADSHOT'))"
+                            }
+                        },
+                        {
+                            "actionbar_message2": {
+                                "type": "label",
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "color": "$tool_tip_text",
+                                "layer": 31,
+                                "text": "$actionbar_text",
+                                "font_type": "MinecraftTen",
+                                "localize": false,
+                                "alpha": "@hud.anim_actionbar_text_alpha_out",
+                                "$atext": "$actionbar_text",
+                                "offset": [
+                                    0,
+                                    -3
+                                ],
+                                "visible": "($atext = 'HEADSHOT')"
+                            }
+                        }
+                    ],
+                    "visible": "(not (($atext = 'kill') or ($atext = '§l')))"
+                }
+            }
+        ]
+    },
+    "kill_anim": {
+        "anim_type": "flip_book",
+        "initial_uv": [
+            0,
+            0
+        ],
+        "frame_count": 42,
+        "frame_step": 320,
+        "fps": 25,
+        "reversible": false,
+        "easing": "linear"
+    }
+}

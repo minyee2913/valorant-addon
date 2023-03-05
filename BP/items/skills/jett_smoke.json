@@ -1,0 +1,36 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "2913:jett_smoke"
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "연막 폭발"
+            },
+            "minecraft:icon": {
+                "texture": "dye_powder"
+            },
+            "minecraft:render_offsets": {
+                "main_hand": {
+                    "first_person": {
+                        "scale": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "third_person": {
+                        "scale": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            "tag:skill": {}
+        },
+        "events": {}
+    }
+}

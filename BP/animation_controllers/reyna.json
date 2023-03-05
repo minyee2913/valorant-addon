@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.reyna_leer": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "onhand": "query.is_item_name_any('slot.weapon.mainhand', 0, '2913:leer')"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playanimation @s animation.humanoid.bow_and_arrow"
+                    ]
+                },
+                "onhand": {
+                    "transitions": [
+                        {
+                            "default": "!query.is_item_name_any('slot.weapon.mainhand', 0, '2913:leer')"
+                        }
+                    ],
+                    "on_entry": [
+                        "/playanimation @s animation.reyna.leer * 10000000",
+                        "/playsound reyna.leer_on @s ~ ~ ~"
+                    ]
+                }
+            }
+        }
+    }
+}

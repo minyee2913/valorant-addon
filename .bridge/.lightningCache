@@ -1,0 +1,112 @@
+$formatVersion: 1
+#manifest
+projects/[2913] valorant/BP/manifest.json|1676879580
+#unknown
+projects/[2913] valorant/BP/pack_icon.png|1674819751
+projects/[2913] valorant/RP/pack_icon.png|1674819749
+#functionTick
+projects/[2913] valorant/BP/functions/tick.json|1674881183
+#gameTest
+projects/[2913] valorant/BP/scripts/index.js|1676995757
+projects/[2913] valorant/BP/scripts/api.js|1676993006
+projects/[2913] valorant/BP/scripts/onTick.js|1676989051
+#entity
+projects/[2913] valorant/BP/entities/player.json|1676877661|{"identifier":["minecraft:player"],"event":["2913:bullet_default","minecraft:gain_bad_omen","minecraft:clear_add_bad_omen","minecraft:trigger_raid","minecraft:remove_raid_trigger","become_ghost","become_default"],"eventReference":["minecraft:trigger_raid","minecraft:remove_raid_trigger","minecraft:clear_add_bad_omen"],"componentGroup":["2913:bullet_default","ghost","default","minecraft:add_bad_omen","minecraft:clear_bad_omen_spell_effect","minecraft:raid_trigger"],"animation":["vandal","reyna_leer"],"family":["player"],"animationIdentifier":["controller.animation.vandal","controller.animation.reyna_leer"],"lootTablePath":["projects/[2913] valorant/BP/loot_tables/empty.json"]}
+projects/[2913] valorant/BP/entities/bullet.json|1675772451|{"identifier":["2913:bullet"],"event":["despawn"],"eventReference":["despawn"],"componentGroup":["despawn"],"family":["projectile"]}
+projects/[2913] valorant/BP/entities/dummy.json|1676880545|{"identifier":["2913:dummy"],"event":["despawn"],"componentGroup":["despawn"]}
+projects/[2913] valorant/BP/entities/detect.json|1676992112|{"identifier":["2913:detect"],"event":["despawn"],"eventReference":["despawn"],"componentGroup":["despawn"],"family":["projectile"]}
+#function
+projects/[2913] valorant/BP/functions/always.mcfunction|1678026495|{"entityTag":["death","leer_shot","jett_smoking","free","free","placed","placed","placed"],"functionPath":["projects/[2913] valorant/BP/functions/reyna_super.mcfunction","projects/[2913] valorant/BP/functions/reyna_super.mcfunction"],"scoreboardObjective":["spray","delay","kill","health","killIcon","death","lifetime","tick","tick2","tick3","team","leer_hide","reyna_ghost","reyna_heal","reyna_super"]}
+projects/[2913] valorant/BP/functions/vandal.mcfunction|1674884171|{"entityTag":[],"functionPath":[],"scoreboardObjective":[]}
+projects/[2913] valorant/BP/functions/check_kill.mcfunction|1675785329|{"entityTag":["killIcon"],"functionPath":[],"scoreboardObjective":[]}
+projects/[2913] valorant/BP/functions/reyna_super.mcfunction|1676995007|{"entityTag":[],"functionPath":[],"scoreboardObjective":[]}
+#animationController
+projects/[2913] valorant/BP/animation_controllers/guns.json|1674883759|{"identifier":["controller.animation.vandal"],"state":["default","once","shoot"],"functionPath":["projects/[2913] valorant/BP/functions/vandal.mcfunction"],"entityTag":[],"scoreboardObjective":[]}
+projects/[2913] valorant/BP/animation_controllers/reyna.json|1676224805|{"identifier":["controller.animation.reyna_leer"],"state":["default","onhand"],"functionPath":[],"entityTag":[],"scoreboardObjective":[]}
+#lootTable
+projects/[2913] valorant/BP/loot_tables/empty.json|1674819752
+#item
+projects/[2913] valorant/BP/items/guns/vandal.json|1674883172|{"identifier":["2913:vandal"],"event":[],"itemTexture":["vandal"],"tag":["gun"]}
+projects/[2913] valorant/BP/items/skills/leer.json|1676290403|{"identifier":["2913:leer"],"event":["shoot"],"eventReference":["shoot"],"itemTexture":["leer"],"tag":["skill"],"entityTag":["leer_shot"],"scoreboardObjective":[],"functionPath":[]}
+projects/[2913] valorant/BP/items/skills/ghost.json|1676992455|{"identifier":["2913:ghost"],"event":["shoot"],"eventReference":["shoot"],"itemTexture":["dye_powder"],"tag":["skill"]}
+projects/[2913] valorant/BP/items/skills/reyna_heal.json|1676992084|{"identifier":["2913:reyna_heal"],"event":["shoot"],"eventReference":["shoot"],"itemTexture":["dye_powder"],"tag":["skill"]}
+projects/[2913] valorant/BP/items/skills/reyna_super.json|1676994559|{"identifier":["2913:reyna_super"],"event":["shoot"],"eventReference":["shoot"],"itemTexture":["nether_star"],"tag":["skill"],"entityTag":["reyna_super"],"scoreboardObjective":[],"functionPath":[]}
+projects/[2913] valorant/BP/items/skills/jett_smoke.json|1678023627|{"identifier":["2913:jett_smoke"],"event":[],"itemTexture":["dye_powder"],"tag":["skill"]}
+#langDef
+projects/[2913] valorant/RP/texts/languages.json|1674819748
+#clientBlock
+projects/[2913] valorant/RP/blocks.json|1674819750|{"identifier":[]}
+#clientManifest
+projects/[2913] valorant/RP/manifest.json|1674820858|{"uuid":["31854546-5930-477f-a097-c6fa4c458649"]}
+#sound
+projects/[2913] valorant/RP/sounds/effect/kill3.ogg|1676252228
+projects/[2913] valorant/RP/sounds/effect/kill4.ogg|1676252228
+projects/[2913] valorant/RP/sounds/effect/kill_ace.ogg|1676252228
+projects/[2913] valorant/RP/sounds/effect/kill_default.ogg|1675579582
+projects/[2913] valorant/RP/sounds/guns/vandal.ogg|1674880854
+projects/[2913] valorant/RP/sounds/reyna/leer_on.ogg|1676202684
+projects/[2913] valorant/RP/sounds/reyna/leer_shot.ogg|1676202684
+projects/[2913] valorant/RP/sounds/effect/Headshot.ogg|1676252228
+projects/[2913] valorant/RP/sounds/effect/kill2.ogg|1676252228
+projects/[2913] valorant/RP/sounds/effect/Teleport.ogg|1676252228
+projects/[2913] valorant/RP/sounds/reyna/ghost.ogg|1676252226
+projects/[2913] valorant/RP/sounds/reyna/heal.ogg|1676252226
+projects/[2913] valorant/RP/sounds/reyna/heal2.ogg|1676252228
+projects/[2913] valorant/RP/sounds/reyna/leer_hide.ogg|1676252226
+projects/[2913] valorant/RP/sounds/reyna/leer_out.ogg|1676252226
+projects/[2913] valorant/RP/sounds/reyna/super.ogg|1676252228
+#clientSound
+projects/[2913] valorant/RP/sounds.json|1674819749
+#texture
+projects/[2913] valorant/RP/textures/entity/vandal.png|1674818806
+projects/[2913] valorant/RP/textures/items/vandal.png|1674823011
+projects/[2913] valorant/RP/textures/particles/bullet.png|1674881685
+projects/[2913] valorant/RP/textures/ui/2913/kill.png|1675781572
+projects/[2913] valorant/RP/textures/ui/2913/kill_default.png|1675781572
+projects/[2913] valorant/RP/textures/ui/2913/kill_uv.png|1675784740
+projects/[2913] valorant/RP/textures/particles/reyna_leer.png|1676200553
+projects/[2913] valorant/RP/textures/items/leer.png|1676200570
+projects/[2913] valorant/RP/textures/particles/purple_full.png|1676992833
+projects/[2913] valorant/RP/textures/particles/jet_smoke.png|1678020984
+#clientAnimation
+projects/[2913] valorant/RP/animations/player.animation.json|1674880180|{"identifier":["animation.player.first_person.attack_rotation","animation.player.look","animation.player.first_rot","animation.player.first_hand","animation.player.first_person.attack_rotation_item","animation.player.first_person.base_pose","animation.player.first_person.crossbow_equipped","animation.player.first_person.crossbow_hold","animation.player.first_person.breathing_bob","animation.player.first_person.empty_hand","animation.player.first_person.map_hold","animation.player.first_person.map_hold_attack","animation.player.first_person.map_hold_main_hand","animation.player.first_person.map_hold_off_hand","animation.player.first_person.swap_item","animation.player.first_person.shield_block","animation.player.first_person.vr_attack_rotation","animation.player.first_person.walk","animation.player.sneak"]}
+projects/[2913] valorant/RP/animations/vandal.animation.json|1674883643|{"identifier":["animation.vandal.default","animation.vandal.shoot"]}
+projects/[2913] valorant/RP/animations/reyna.animation.json|1676995444|{"identifier":["animation.reyna.leer","animation.reyna.leer_shot","animation.reyna.ghost","animation.reyna.ghostend","animation.reyna.heal","animation.reyna.super"]}
+#clientAnimationController
+projects/[2913] valorant/RP/animation_controllers/particle.json|1676209150|{"identifier":["controller.animation.particle","controller.animation.leer"],"state":["default","a"],"particleEffect":["emitter","reyna_leer"]}
+projects/[2913] valorant/RP/animation_controllers/player_root.json|1676209942|{"identifier":["controller.animation.player.root"],"state":["first_person","map_player","paperdoll","third_person"],"animationReference":["first_hand","humanoid_base_pose","look_at_target_ui","move.arms","move.legs","cape"]}
+#renderController
+projects/[2913] valorant/RP/render_controllers/player.json|1676877823|{"identifier":["controller.render.player.first_person","controller.render.player","controller.render.player.character"]}
+projects/[2913] valorant/RP/render_controllers/reyna_leer.json|1676208179|{"identifier":["controller.render.reyna_leer"]}
+#soundDefinition
+projects/[2913] valorant/RP/sounds/sound_definitions.json|1676992488|{"identifier":["vandal.shoot","effect.kill_default","effect.kill2","effect.kill3","effect.kill4","effect.kill_ace","reyna.leer_on","reyna.leer_shot","reyna.leer_hide","reyna.leer_out","reyna.ghost","reyna.heal1","reyna.heal2","reyna.super","effect.headshot"]}
+#clientLang
+projects/[2913] valorant/RP/texts/en_US.lang|1674819748|{"actionText":[]}
+#terrainTexture
+projects/[2913] valorant/RP/textures/terrain_texture.json|1674819747|{"texture":[]}
+#geometry
+projects/[2913] valorant/RP/models/entity/blank.geo.json|1650694034|{"identifier":["geometry.blank"]}
+projects/[2913] valorant/RP/models/entity/character.geo.json|1676208529|{"identifier":["geometry.character"],"locator":["lead_hold","leer"],"bone":["character","setpoint","waist","body","head","hat","cape","leftArm","leftSleeve","leftItem","jacket","rightArm","rightSleeve","rightItem","leftLeg","leftPants","rightLeg","rightPants"]}
+projects/[2913] valorant/RP/models/entity/vandal.json|1674819939|{"identifier":["geometry.vandal"],"bone":["root","waist","body","head","hat","cape","leftArm","leftSleeve","leftItem","rightArm","rightSleeve","rightItem","gun","body2","point","fuckline1","handle","bullet","bone","a1","a2","fuckline2","fuckline3","fuckline4","fuckline5","fuckline6","fuckline7","jacket","leftLeg","leftPants","rightLeg","rightPants"]}
+#particle
+projects/[2913] valorant/RP/particles/bullet.particle (1).json|1676198670|{"identifier":["2913:bullet"],"texturePath":["projects/[2913] valorant/RP/textures/particles/bullet.png"]}
+projects/[2913] valorant/RP/particles/reyna_leer.json|1676200730|{"identifier":["2913:reyna_leer"],"texturePath":["projects/[2913] valorant/RP/textures/particles/reyna_leer.png"]}
+projects/[2913] valorant/RP/particles/reyna_leer_on.json|1676209269|{"identifier":["2913:reyna_leer_on"],"texturePath":["projects/[2913] valorant/RP/textures/particles/reyna_leer.png"]}
+projects/[2913] valorant/RP/particles/dark_dusts.particle.json|1676993070|{"identifier":["2913:dark_dusts"],"texturePath":[]}
+projects/[2913] valorant/RP/particles/dark_small.particle.json|1676991877|{"identifier":["2913:dark_small"],"texturePath":[]}
+projects/[2913] valorant/RP/particles/reyna_dusts.particle.json|1676993682|{"identifier":["2913:reyna_dusts"],"texturePath":[]}
+projects/[2913] valorant/RP/particles/jett_smoke_sphere.particle.json|1678025465|{"identifier":["2913:jett_smoke_sphere"],"texturePath":["projects/[2913] valorant/RP/textures/particles/jet_smoke.png"]}
+projects/[2913] valorant/RP/particles/jett_smoke.particle.json|1678021846|{"identifier":["2913:jett_smoke"],"texturePath":[]}
+projects/[2913] valorant/RP/particles/white_dusts.particle.json|1678022254|{"identifier":["2913:white_dusts"],"texturePath":[]}
+#itemTexture
+projects/[2913] valorant/RP/textures/item_texture.json|1676207786|{"texture":["vandal","leer"],"texturePath":["projects/[2913] valorant/RP/textures/items/vandal.png","projects/[2913] valorant/RP/textures/items/leer.png"]}
+#clientEntity
+projects/[2913] valorant/RP/entity/bullet.json|1674882106|{"identifier":["2913:bullet"],"particleReference":["emitter"],"animationReference":["particle"],"textureReference":["default"],"materialReference":["default"],"geometryReference":["default"],"particleIdentifier":["2913:bullet"],"animationIdentifier":["controller.animation.particle"],"materialIdentifier":["arrow"],"geometryIdentifier":["geometry.blank"],"renderControllerIdentifier":["controller.render.arrow"],"texturePath":[]}
+projects/[2913] valorant/RP/entity/player.entity.json|1676877976|{"identifier":["minecraft:player"],"particleReference":["reyna_leer"],"animationReference":["root","base_controller","hudplayer","humanoid_base_pose","look_at_target","look_at_target_ui","look_at_target_default","look_at_target_gliding","look_at_target_swimming","look_at_target_inverted","cape","move.arms","move.legs","swimming","swimming.legs","riding.arms","riding.legs","holding","brandish_spear","holding_spyglass","charging","attack.positions","attack.rotations","sneaking","bob","damage_nearby_mobs","bow_and_arrow","use_item_progress","skeleton_attack","sleeping","first_person_base_pose","crossbow_controller","shield_block_main_hand","shield_block_off_hand","blink","first_rot","first_hand","vandal","tooting_goat_horn","look","sneak","leer"],"textureReference":["default","cape"],"materialReference":["default","cape","animated","ghost"],"geometryReference":["character","cape"],"particleIdentifier":["2913:reyna_leer_on"],"animationIdentifier":["controller.animation.player.root","controller.animation.player.base","controller.animation.player.hudplayer","animation.humanoid.base_pose","controller.animation.humanoid.look_at_target","animation.player.look_at_target.ui","animation.humanoid.look_at_target.default","animation.humanoid.look_at_target.gliding","animation.humanoid.look_at_target.swimming","animation.player.look_at_target.inverted","animation.player.cape","animation.player.move.arms","animation.player.move.legs","animation.player.swim","animation.player.swim.legs","animation.player.riding.arms","animation.player.riding.legs","animation.player.holding","animation.humanoid.brandish_spear","animation.humanoid.holding_spyglass","animation.humanoid.charging","animation.player.attack.positions","animation.player.attack.rotations","animation.player.sneaking","animation.player.bob","animation.humanoid.damage_nearby_mobs","animation.humanoid.bow_and_arrow","animation.humanoid.use_item_progress","animation.skeleton.attack","animation.player.sleeping","animation.player.first_person.base_pose","controller.animation.player.crossbow","animation.player.shield_block_main_hand","animation.player.shield_block_off_hand","controller.animation.persona.blink","animation.player.first_rot","animation.player.first_hand","animation.vandal.default","animation.humanoid.tooting_goat_horn","animation.player.look","animation.player.sneak","controller.animation.leer"],"materialIdentifier":["entity_alphatest","player_animated","charged_creeper"],"geometryIdentifier":["geometry.character","geometry.cape"],"renderControllerIdentifier":["controller.render.player.first_person","controller.render.player.character","controller.render.player.map"],"texturePath":[]}
+#attachable
+projects/[2913] valorant/RP/attachables/vandal.json|1676207837|{"identifier":["2913:leer"],"textureReference":["default","enchanted"],"materialReference":["default","enchanted"],"geometryReference":["default"],"materialIdentifier":["entity_alphatest","entity_alphatest_glint"],"geometryIdentifier":["geometry.blank"],"renderControllerIdentifier":["controller.render.item_default"],"texturePath":["projects/[2913] valorant/RP/textures/items/leer.png"]}
+projects/[2913] valorant/RP/attachables/leer.json|1676207804|{"identifier":["2913:vandal"],"textureReference":["default","enchanted"],"materialReference":["default","enchanted"],"geometryReference":["default"],"materialIdentifier":["entity_alphatest","entity_alphatest_glint"],"geometryIdentifier":["geometry.vandal"],"renderControllerIdentifier":["controller.render.item_default"],"texturePath":["projects/[2913] valorant/RP/textures/entity/vandal.png"]}
+#ui
+projects/[2913] valorant/RP/ui/hud_screen.json|1676876955
+#fog
+projects/[2913] valorant/RP/fogs/leer.json|1676291739|{"identifier":["2913:leer"]}

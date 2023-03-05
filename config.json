@@ -1,0 +1,45 @@
+{
+	"type": "minecraftBedrock",
+	"name": "[2913] valorant",
+	"namespace": "2913",
+	"authors": [
+		"minyee2913"
+	],
+	"targetVersion": "1.19.60",
+	"description": "§l§amade by minyee2913\n§cyoutube: §f민이님이심\n§bdiscord: §fminyee2913#8319",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": true,
+		"enableGameTestFramework": true,
+		"experimentalMolangFeatures": true,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "[2913] valorant"
+				}
+			]
+		]
+	}
+}

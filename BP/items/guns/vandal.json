@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "2913:vandal"
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "밴달"
+			},
+			"minecraft:shooter": {
+				"max_draw_duration": 3600,
+				"scale_power_by_draw_duration": true
+			},
+			"minecraft:icon": {
+				"texture": "vandal"
+			},
+			"tag:gun": {}
+		},
+		"events": {}
+	}
+}

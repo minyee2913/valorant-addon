@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "[2913] valorant",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"vandal": {
+			"textures": "textures/items/vandal"
+		},
+		"leer": {
+			"textures": "textures/items/leer"
+		}
+	}
+}

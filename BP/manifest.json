@@ -1,0 +1,50 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"minyee2913"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.6.0"
+			],
+			"dash": [
+				"0.10.8"
+			]
+		}
+	},
+	"header": {
+		"name": "[2913] valorant",
+		"description": "§l§amade by minyee2913\n§cyoutube: §f민이님이심\n§bdiscord: §fminyee2913#8319",
+		"min_engine_version": [
+			1,
+			19,
+			50
+		],
+		"uuid": "1f9b2a11-0b5f-44b5-9158-18665e10583e",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "698abe08-a0ac-4e30-a1a5-43c8d8806209",
+			"entry": "scripts/index.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.1.0-beta"
+		}
+	]
+}

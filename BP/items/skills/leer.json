@@ -1,0 +1,32 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "2913:leer"
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "눈총"
+            },
+            "minecraft:icon": {
+                "texture": "leer"
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "shoot"
+                }
+            },
+            "tag:skill": {}
+        },
+        "events": {
+            "shoot": {
+                "run_command": {
+                    "command": [
+                        "scoreboard players set @s tick 0",
+                        "tag @s add leer_shot"
+                    ]
+                }
+            }
+        }
+    }
+}

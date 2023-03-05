@@ -1,0 +1,48 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "2913:ghost"
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "무시"
+            },
+            "minecraft:icon": {
+                "texture": "dye_powder"
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "shoot"
+                }
+            },
+            "minecraft:render_offsets": {
+                "main_hand": {
+                    "first_person": {
+                        "scale": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "third_person": {
+                        "scale": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            "tag:skill": {}
+        },
+        "events": {
+            "shoot": {
+                "shoot": {
+                    "launch_power": 10,
+                    "projectile": "2913:detect"
+                }
+            }
+        }
+    }
+}

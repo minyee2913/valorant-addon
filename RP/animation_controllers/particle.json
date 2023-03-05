@@ -1,0 +1,59 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.particle": {
+			"states": {
+				"default": {
+					"particle_effects": [
+						{
+							"effect": "emitter",
+							"locator": "particle"
+						}
+					],
+					"transitions": [
+						{
+							"a": "(1.0)"
+						}
+					]
+				},
+				"a": {
+					"particle_effects": [
+						{
+							"effect": "emitter",
+							"locator": "particle"
+						}
+					],
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.leer": {
+			"states": {
+				"default": {
+					"particle_effects": [
+						{
+							"effect": "reyna_leer",
+							"locator": "leer"
+						}
+					],
+					"transitions": [
+						{
+							"a": "(1.0)"
+						}
+					]
+				},
+				"a": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

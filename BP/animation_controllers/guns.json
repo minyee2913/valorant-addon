@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.vandal": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"shoot": "query.is_item_name_any('slot.weapon.mainhand', 0, '2913:vandal') && query.is_using_item"
+						},
+						{
+							"once": "query.is_item_name_any('slot.weapon.mainhand', 0, '2913:vandal') && variable.attack_time"
+						}
+					]
+				},
+				"once": {
+					"transitions": [
+						{
+							"default": "!variable.attack_time"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s delay 0",
+						"/function vandal"
+					]
+				},
+				"shoot": {
+					"transitions": [
+						{
+							"default": "query.is_item_name_any('slot.weapon.mainhand', 0, '2913:vandal') && query.is_using_item"
+						}
+					],
+					"on_entry": [
+						"/function vandal"
+					],
+					"on_exit": [
+						"/function vandal"
+					]
+				}
+			}
+		}
+	}
+}

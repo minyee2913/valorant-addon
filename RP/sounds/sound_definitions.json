@@ -1,0 +1,95 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"vandal.shoot": {
+			"category": "player",
+			"sounds": [
+				"sounds/guns/vandal"
+			]
+		},
+		"effect.kill_default": {
+			"category": "ui",
+			"sounds": [
+				"sounds/effect/kill_default"
+			]
+		},
+		"effect.kill2": {
+			"category": "ui",
+			"sounds": [
+				"sounds/effect/kill2"
+			]
+		},
+		"effect.kill3": {
+			"category": "ui",
+			"sounds": [
+				"sounds/effect/kill3"
+			]
+		},
+		"effect.kill4": {
+			"category": "ui",
+			"sounds": [
+				"sounds/effect/kill4"
+			]
+		},
+		"effect.kill_ace": {
+			"category": "ui",
+			"sounds": [
+				"sounds/effect/kill_ace"
+			]
+		},
+		"reyna.leer_on": {
+			"category": "ui",
+			"sounds": [
+				"sounds/reyna/leer_on"
+			]
+		},
+		"reyna.leer_shot": {
+			"category": "ui",
+			"sounds": [
+				"sounds/reyna/leer_shot"
+			]
+		},
+		"reyna.leer_hide": {
+			"category": "ui",
+			"sounds": [
+				"sounds/reyna/leer_hide"
+			]
+		},
+		"reyna.leer_out": {
+			"category": "ui",
+			"sounds": [
+				"sounds/reyna/leer_out"
+			]
+		},
+		"reyna.ghost": {
+			"category": "ui",
+			"sounds": [
+				"sounds/reyna/ghost"
+			]
+		},
+		"reyna.heal1": {
+			"category": "ui",
+			"sounds": [
+				"sounds/reyna/heal"
+			]
+		},
+		"reyna.heal2": {
+			"category": "ui",
+			"sounds": [
+				"sounds/reyna/heal2"
+			]
+		},
+		"reyna.super": {
+			"category": "ui",
+			"sounds": [
+				"sounds/reyna/super"
+			]
+		},
+		"effect.headshot": {
+			"category": "ui",
+			"sounds": [
+				"sounds/effect/Headshot"
+			]
+		}
+	}
+}

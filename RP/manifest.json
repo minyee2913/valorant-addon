@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"minyee2913"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.6.0"
+			],
+			"dash": [
+				"0.10.8"
+			]
+		}
+	},
+	"header": {
+		"name": "[2913] valorant",
+		"description": "§l§amade by minyee2913\n§cyoutube: §f민이님이심\n§bdiscord: §fminyee2913#8319",
+		"min_engine_version": [
+			1,
+			19,
+			50
+		],
+		"uuid": "31854546-5930-477f-a097-c6fa4c458649",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "24e3110f-57bf-476f-a789-babe18595f4d",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "1f9b2a11-0b5f-44b5-9158-18665e10583e",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}
