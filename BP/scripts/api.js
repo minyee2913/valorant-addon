@@ -27,7 +27,7 @@ export function getTagPlayers(tag) {
 
 export function getScore(entity, objectiveId, defaultValue = 0) {
     try {
-        return scoreboard.getObjective(objectiveId).getScore(entity.scoreboard);
+        return world.scoreboard.getObjective(objectiveId).getScore(entity.scoreboard);
     } catch {
         return defaultValue;
     }

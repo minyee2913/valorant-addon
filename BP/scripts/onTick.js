@@ -1,4 +1,4 @@
-import { world } from "@minecraft/server"
+import { world, system } from "@minecraft/server"
 
 const queue = [];
 let currentTick = 0;
@@ -29,7 +29,7 @@ export function deleteTask(id) {
     }
 }
 
-world.events.tick.subscribe(() => {
+system.runInterval(() => {
     currentTick++
 
     let taskList = queue.filter((v) => v.tick === currentTick);
